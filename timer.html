@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<script src="jquery.min.js"></script>
+		<script src="timer.js"></script>
+        <link rel="stylesheet" type="text/css" href="timer.css">
+        <title> Timer </title>
+    </head>
+
+    <body>
+		<div id="display-timer"><p id="timer">0:00:00:000</p></div>
+		<div id="timer-setting">
+			<input id="24hr" type="button" value="24hr" />
+			<input id="10min" type="button" value="10min" />
+			<input id="10s" type="button" value="10s" />
+			<br/>
+			<input id="1hr" type="button" value="1hr" />
+			<input id="1min" type="button" value="1min" />
+			<input id="1s" type="button" value="1s" />
+			<br/>
+			<input id="10ms" type="button" value="10ms" />
+			<input id="reset-time" type="button" value="Reset" />
+			<input id="confirm" type="button" value="Confirm" />
+		</div>
+		<div id="count-setting">
+			<input id="start" type="button" value="Start" disabled />
+			<input id="stop" type="button" value="Stop" disabled />
+			<input id="reset-count" type="button" value="Reset" disabled />
+			<br/>
+			<input id="back" type="button" value="Back" disabled />
+		</div>
+		 <!--                   todo             -->
+		<div class="heading">My TODO List</div>
+		<div class="input-div">
+			<input type="text" id="task-input" class="task-input" placeholder="Enter a task to fulfill"/>
+			<button id="task-submit-btn" class="task-btn task-btn-submit">Add</button>
+		</div>
+		<div class="tasks-list-div" id="tasksList"></div>
+		<div class="task-clear-div">
+			<button id="task-clear-btn" class="task-btn task-btn-clear">Clear All</button>
+		</div>
+    </body>
+	<script src="script.js"></script>
+	<!--         in page timer      -->
+	<label for="interval_mins">Minutes: </label><input type="number" id="interval_mins" value="0"/>
+    <label for="interval_secs">Seconds: </label><input type="number" id="interval_secs" value="0"/>
+    <button id="btn">Start</button><br>
+    <button id="pausebtn">Pause</button>
+    <button id="resumebtn">Resume</button>
+    <button id="resetbtn">Reset</button>
+    
+    <script src="popup.js"></script>
+	<!--      Site blocker    -->
+	<div class="wrap">
+		<button class="btn st-btn" id="toggle" class="btn btn-secondary">
+		  Hello Extensions
+		</button>
+		<p id="alert"></p>
+		<p class="instruction">
+		  Enter websites you'd like to block. Seperate by comma.
+		</p>
+		<textarea id="textbox"></textarea>
+		<button class="btn submit-btn" id="ok_btn" type="button">
+		  <i class="fas fa-plus"></i>Add to filter
+		</button>
+		<button class="btn submit-btn" id="reset_btn" type="button">
+		  <i class="fas fa-archive"></i>Reset
+		</button>
+		<h3>Filter List</h3>
+		<p class="filterText" id="filterList"></p>
+	  </div>
+	  <script src="popup2.js"></script>
+  
+</html>
