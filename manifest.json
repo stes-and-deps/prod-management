@@ -1,0 +1,31 @@
+{
+    "manifest_version":2,
+    "name":"Productivity Management",
+    "description": "This Extension will help you to manage your time well and make your day productive.",
+    "version":"0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background":{
+        "scripts":["background.js"]
+    },
+
+
+    "browser_action":{
+        "default_icon":"icon.png",
+        "default_popup":"index.html",
+        "default_title":"Productivity Management"
+    },
+    "permissions":[
+        "storage", "tabs", "notifications", "alarms",        "webRequest",
+        "webRequestBlocking","declarativeContent"
+    ]
+
+}

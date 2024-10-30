@@ -1,0 +1,155 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  height: 100px;
+} 
+
+.container {
+  width: 100%;
+  margin: 3% auto 3% auto;
+align-content: center;
+margin-top: 50px;
+}
+
+#msg {
+  height: 20%;
+  color: #3D087B;
+  text-align: center;
+
+  font-size: 40px;
+  width: 400px;
+  margin-top: 25px;
+
+
+}
+
+#hour,
+#min,
+#sec {
+  padding: 5%;
+
+  color: #476e9e;
+  width: 10%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+}
+
+#hour:focus,
+#min:focus {
+  background-color: #f2f2f2;
+  border: 1px solid #b1e1e4;
+}
+
+.btn {
+  border: none;
+  background-color: #64C9CF;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 3%;
+  margin-right: 5%;
+}
+
+.btn:hover {
+  background-color: #476e9e;
+}
+
+#reset {
+  margin-right: 0;
+}
+
+.wrapper {
+  text-align: center;
+  margin: auto;
+  margin-top: 25px;
+  margin-left: 75px;
+  width: 250px;
+
+}
+
+#btns {
+  margin-top: 5%;
+}
+
+#sec {
+  background-color: #efefef;
+}
+nav {
+background-color: #CAF7E3;
+width: 400px;
+height: 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#logo {
+width: 30px;
+height: 30px;
+margin-left: 20px;
+border-radius: 10px;
+background-color: #FFE194;
+
+}
+
+#menu {
+margin-right: 10px;
+display: flex;
+justify-content: space-around;
+z-index: 1;
+margin-left: 10px;
+margin-top: 20px;
+height: 50px;
+width: 500px;
+}
+
+html{
+height: 450px;
+width: 400px;
+}
+body{
+background-image:url(bgalarm.jpeg) ;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color:#464646;
+justify-content: center;
+text-align: center;
+margin: 0px;
+
+}
+.logo{
+display: flex;
+justify-content: center;
+
+}
+img{
+padding-top: 195px;
+margin: 20px;
+width: 50px;
+height: 50px;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #64C9CF;
+  color: white;
+      margin-top: 50px;
+    font-size: 15px;
+    width:400px;
+
+    height: 90px;
+
+    position: absolute;
+    bottom: 0;
+
+}
+p{
+      font-size: 15px;
+
+      margin-top: 20px;
+    }

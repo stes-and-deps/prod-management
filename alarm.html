@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+      <link rel="stylesheet" href="alarm.css" />
+
+    <script src="alarm.js">
+    </script>
+</head>
+
+<body>
+     <nav>
+   <div id="logo">
+     <a href="index.html">Home</a>
+   </div>
+   <div id="menu">
+
+     <a href="" class="nav-item nav-active">Set Alarm</a>
+     <a href="blockURLs.html" class="nav-item">Block URLs</a>
+     <a href="todo.html" class="nav-item">To do list</a>
+     <a href="timer.html" class="nav-item">Timer</a>
+
+   </div>
+ </nav>
+
+    <div id="msg" class="container"></div>
+    <div id="time" class="container">
+        <div class="wrapper">
+            <input type="text" id="hour" value="0" name="hour" /> : <input type="text" id="min" value="0" name="hour" /> : <input type="text" id="sec" name="sec" value="0" readonly />
+        </div>
+    </div>
+    <div id="btns" class="container">
+        <div class="wrapper">
+        &nbsp;&nbsp;<input type="button" id="reset_btn" class="btn" value="restart" />
+            <input type="button" id="after_btn" class="btn" value="after" /> <input type="button" id="when_btn" class="btn" value="when" />
+        </div>
+    </div>
+    <footer>
+  <p>You can set your alarm here!<br> Click "when" if you want to set for the exact time and click "after" if you want to set alarm for some time period.<br>
+</footer>
+</body>
+
+</html>

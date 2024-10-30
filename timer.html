@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="timer.css">
+</head>
+
+<body>
+  <nav>
+   <div id="logo">
+     <a href="index.html">Home</a>
+   </div>
+   <div id="menu">
+
+     <a href="alarm.html" class="nav-item nav-active">Set Alarm</a>
+     <a href="blockURLs.html" class="nav-item">Block URLs</a>
+     <a href="todo.html" class="nav-item">To do list</a>
+     <a href="" class="nav-item">Timer</a>
+
+   </div>
+ </nav>
+    <div class="app-box">
+        <div class="app-inner">
+            <div class="title">
+                <span>Timer</span>
+            </div>
+
+            <div class="timer-wrap">
+                <div id="timer">
+                    <div class="circle"></div>
+                </div>
+                <div class="time">
+                    <input type="text" maxlength="2" value="00" id="hh"><span>h</span>
+                    <input type="text" maxlength="2" value="00" id="mm"><span>m</span>
+                    <input type="text" maxlength="2" value="00" id="ss"><span>s</span>
+                </div>
+            </div>
+            <div class="sound-eff">
+                <label for="sound"><font color="#262A53"> Sound effect</font>
+                    <input type="checkbox" id="sound" name="sound" checked />
+                    <span></span>
+                </label>
+            </div>
+            <div class="action">
+                <div class="action-item">
+                    <a href="#" id="start" class="btn green">Start</a>
+                </div>
+                <div class="action-item">
+                    <a href="#" id="pause" class="btn not-active">Stop</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery.1.11.2.min.js">
+    </script>
+    <script src="timer.js">
+    </script>
+
+</body>
+
+</html>
